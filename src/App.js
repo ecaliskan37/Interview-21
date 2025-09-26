@@ -51,8 +51,7 @@ const Captcha = ({ handleX }) => {
   const [c, setC] = useState(false)
 
   useEffect(() => {
-    if (typeof document !== 'undefined')
-      setId(Math.floor(Math.random() * 5) + 1)
+    setId(Math.floor(Math.random() * 5) + 1)
   }, [c])
 
   const handleClick = (number) => {
